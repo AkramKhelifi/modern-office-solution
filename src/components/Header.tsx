@@ -9,7 +9,11 @@ export const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center">
-            <h1 className="text-2xl font-bold text-primary">Capital Bureautique</h1>
+            <img 
+              src="/lovable-uploads/79c47339-f362-427f-bfd0-3f54014528ca.png" 
+              alt="Capital Bureautique Logo" 
+              className="h-16 w-16"
+            />
           </div>
 
           {/* Desktop Navigation */}
