@@ -70,9 +70,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <div className="container mx-auto py-16 px-4 mt-20">
+      <div className="flex-1 container mx-auto px-4 pt-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-primary mb-4">
             Des solutions adaptées à vos besoins professionnels

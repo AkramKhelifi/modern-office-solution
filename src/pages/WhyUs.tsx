@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 
 const WhyUsPage = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen flex flex-col">
       <Header />
-      <main className="container mx-auto px-4 py-16 mt-20">
+      <main className="flex-1 container mx-auto px-4 pt-20">
         <section className="text-center mb-16">
           <h1 className="text-4xl font-bold text-primary mb-4">
             Capital Bureautique, votre partenaire de confiance
