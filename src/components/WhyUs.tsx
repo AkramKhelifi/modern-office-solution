@@ -1,7 +1,12 @@
-import { Users, TrendingUp, Clock, Award } from "lucide-react";
+import { Users, TrendingUp, Clock, Award, Shield, Target, MapPin, Coins } from "lucide-react";
 
 export const WhyUs = () => {
   const stats = [
+    {
+      icon: Users,
+      value: "3000+",
+      label: "Clients actifs",
+    },
     {
       icon: TrendingUp,
       value: "16M€",
@@ -14,25 +19,63 @@ export const WhyUs = () => {
     },
     {
       icon: Clock,
-      value: "25+",
-      label: "Années d'expérience",
+      value: "4h",
+      label: "Délai d'intervention",
+    },
+  ];
+
+  const engagements = [
+    {
+      icon: Clock,
+      title: "Réactivité",
+      description: "Intervention sur site en 4 heures et prise en main à distance en moins de 15 minutes.",
     },
     {
-      icon: Award,
-      value: "98%",
-      label: "Clients satisfaits",
+      icon: Shield,
+      title: "Expertise technique",
+      description: "Une équipe de techniciens certifiés en bureautique, téléphonie et informatique.",
+    },
+    {
+      icon: Target,
+      title: "Solutions sur mesure",
+      description: "Des offres adaptées aux besoins spécifiques des TPE, PME et grandes entreprises.",
+    },
+    {
+      icon: Coins,
+      title: "Économie et performance",
+      description: "Optimisation des coûts opérationnels grâce à des équipements modernes et fiables.",
+    },
+    {
+      icon: MapPin,
+      title: "Proximité",
+      description: "Un service client local et accessible, principalement en Île-de-France.",
     },
   ];
 
   return (
-    <section id="why-us" className="py-20 bg-primary/5">
+    <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center">Pourquoi Nous Choisir</h2>
+        <h2 className="section-title text-center">Ce qui nous distingue</h2>
         <p className="section-subtitle text-center">
-          Une expertise reconnue au service de votre réussite
+          Chez Capital Bureautique, nous plaçons la satisfaction client au cœur de nos priorités. Voici pourquoi nos clients nous font confiance :
         </p>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+          {engagements.map((engagement, index) => (
+            <div
+              key={index}
+              className="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            >
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <engagement.icon className="text-primary" size={24} />
+              </div>
+              <h3 className="text-xl font-semibold mb-2">{engagement.title}</h3>
+              <p className="text-text-secondary">{engagement.description}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-20">
           {stats.map((stat, index) => (
             <div
               key={index}
