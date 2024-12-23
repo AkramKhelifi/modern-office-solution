@@ -1,7 +1,8 @@
 import { Printer, Phone, Shield, ChevronRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
+import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 
 const Services = () => {
   const services = [
@@ -69,8 +70,9 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="container mx-auto py-16 px-4">
+    <div className="min-h-screen">
+      <Header />
+      <div className="container mx-auto py-16 px-4 mt-20">
         <div className="text-center mb-16">
           <h1 className="text-4xl font-bold text-primary mb-4">
             Des solutions adaptées à vos besoins professionnels
@@ -156,6 +158,7 @@ const Services = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
