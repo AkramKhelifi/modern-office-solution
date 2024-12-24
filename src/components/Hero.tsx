@@ -6,16 +6,16 @@ export const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold text-primary mb-6 animate-fade-in">
-            Votre partenaire en solutions bureautiques, téléphoniques et informatiques
+            Des solutions bureautiques, téléphoniques et informatiques sur mesure pour votre entreprise
           </h1>
           <p className="text-xl text-text-secondary mb-12 animate-slide-up">
-            Expertise technique, service client dédié et intervention rapide pour votre entreprise
+            Boostez votre productivité et optimisez vos coûts avec Capital Bureautique, le partenaire de confiance des entreprises en France
           </p>
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center animate-slide-up">
             <button className="btn-primary flex items-center gap-2">
               Demander un devis <ArrowRight size={20} />
             </button>
-            <button className="btn-secondary">Nous contacter</button>
+            <button className="btn-secondary">Parler à un expert</button>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
